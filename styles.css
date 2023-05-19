@@ -1,0 +1,169 @@
+:root {
+  /*Colors*/
+  --primary-color: rgb(111, 109, 109);
+  --secondary-color: rgb(0, 90, 84);
+
+  /*Font family*/
+  --font-family: "Source Sans Pro", sans-serif;
+
+  /*Font size*/
+  --font-size-h1: 1.3rem;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: var(--font-family);
+}
+.header-top {
+  display: flex;
+  padding: 2rem 1rem;
+  width: 100%;
+  justify-content: space-around;
+}
+.header-top a img {
+  width: 200px;
+  object-fit: cover;
+}
+.search-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px var(--primary-color);
+  border-radius: 0.3rem;
+  width: 400px;
+}
+.search-container input[type="text"] {
+  padding: 0.5rem;
+  margin-right: 0;
+  border: 1px solid rgb(214, 209, 209);
+  border-right: none;
+  border-radius: 0.3rem 0 0 0.3rem;
+  font-size: 0.8rem;
+  line-height: 2;
+  width: 100%;
+}
+.search-container form button {
+  padding: 0.5rem;
+  margin-right: 0;
+  border: none;
+  line-height: 2;
+  background-color: var(--secondary-color);
+  border-radius: 0 0.3rem 0.3rem 0;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+}
+.header-top-tooltips {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.header-top-tooltips .tooltips a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  margin: 0.5rem;
+}
+.tooltips i {
+  font-size: 1.3rem;
+}
+.tooltips-signin {
+  border-radius: 1px solid var(--primary-color);
+}
+.menu-list {
+  list-style: none;
+  display: flex;
+  background-color: bisque;
+  border-bottom: 1px solid var(--primary-color);
+  position: relative;
+}
+.uppercase-text {
+  text-transform: uppercase;
+}
+.menu-list > li {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+.menu-list li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.menu-list li a:hover {
+  text-decoration: underline 2px;
+  text-underline-offset: 3px;
+}
+.dropdown-content {
+  /*Comment display: none to see dropdown menu*/
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 3.5rem;
+}
+.dropdown-content a {
+  display: block;
+}
+.menu-list:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content-wrapper {
+  display: flex;
+  background-color: greenyellow;
+}
+
+.dropdown-content-wrapper ul {
+  flex: 1 1 auto;
+  list-style: none;
+  text-align: left;
+  padding: 1rem 1.5rem;
+}
+.dropdown-col-list-items a {
+  color: var(--primary-color);
+  font-weight: 400;
+  margin: 1rem 0;
+}
+.dropdown-background {
+  background-color: rgb(241, 238, 238);
+}
+
+.dropdown-content-sublist img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+/* Header Bottom */
+.header-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+.header-bottom {
+  flex: 1 1 auto;
+  background-color: rgb(249, 245, 245);
+}
+.header-bottom a {
+  vertical-align: middle;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: inherit;
+  margin: 0.8rem;
+  font-weight: 400;
+}
+.header-bottom a i {
+  margin: 0 0.5rem;
+}

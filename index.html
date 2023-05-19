@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bicycle Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e1d9fb2330.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Header TOP -->
+      <div class="header-top">
+        <div>
+          <a href="#">
+            <img src="/images/Evans_logo.svg" alt="Evans cycles logo" />
+          </a>
+        </div>
+        <div class="search-container">
+          <form action="/action-page.php">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search product or brand"
+            />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="header-top-tooltips">
+          <div class="tooltips tooltips-signin">
+            <a href="#">
+              <i class="fa-solid fa-user"></i> <span>Sign In</span></a
+            >
+          </div>
+
+          <div class="tooltips tooltips-location">
+            <a href="#"
+              ><i class="fa-solid fa-location-dot"></i><span> Stores</span></a
+            >
+          </div>
+          <div class="tooltips tooltips-currency">
+            <a href="#"
+              ><i class="fa-solid fa-location-dot"></i>
+              <!-- <i class="fa-light fa-circle-sterling"></i> -->
+              <span>£ GBP</span></a
+            >
+          </div>
+          <div class="tooltips tooltips-currency">
+            <a href="#">
+              <i class="fa-solid fa-location-dot"></i> <span>Wish list</span></a
+            >
+          </div>
+          <div class="tooltips tooltips-shoppingBag">
+            <a href="#"
+              ><i class="fa-sharp fa-solid fa-bag-shopping"></i>
+              <span>£0.00</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Navigation MENU of the website -->
+      <nav>
+        <ul class="menu-list">
+          <li>
+            <a class="uppercase-text" href="#">bikes</a>
+            <div class="dropdown-content">
+              <div class="dropdown-content-wrapper">
+                <ul class="dropdown-content-sublist">
+                  <li class="dropdown-col-header uppercase-text">
+                    <a href="#">bike categories</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Road Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Mountain Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Hybrid Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Electric Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Kids' Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Gravel Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Folding Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Touring Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">BMX Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Frames</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">View All Bikes</a>
+                  </li>
+                </ul>
+                <ul class="dropdown-content-sublist">
+                  <li class="dropdown-col-header uppercase-text">
+                    <a href="#">Kids' Bikes </a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Balance Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">2-4 Years</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">4-7 Years</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">7-10 Years</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">10-13 Years</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">13+ Years</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">View All Kids' Bikes</a>
+                  </li>
+                </ul>
+                <ul class="dropdown-content-sublist">
+                  <li class="dropdown-col-header uppercase-text">
+                    <a href="#">Top Bike Brands </a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Trek</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Specialized</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Cannondale</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Brompton</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Pinnacle</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Mongoose</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Raleigh</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Haibike</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Muddyfox</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Whyte</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">View All Brands</a>
+                  </li>
+                </ul>
+                <ul class="dropdown-content-sublist dropdown-background">
+                  <li class="dropdown-col-header uppercase-text">
+                    <a href="#">Buying Guides</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Road Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Mountain Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Commuter and Leisure Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Electric Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Folding Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Cyclocross Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Adventure Road Bikes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Kids' Bikes</a>
+                  </li>
+                </ul>
+                <ul class="dropdown-content-sublist dropdown-background">
+                  <li class="dropdown-col-header uppercase-text">
+                    <a href="#">Cycle To Work Schemes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Cycleshemes</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Our Ride to Work Scheme</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">Ride to Work Savings Calculator</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">I am an Employee</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">I am an Employer</a>
+                  </li>
+                  <li class="dropdown-col-list-items">
+                    <a href="#">View All Cycling Schemes</a>
+                  </li>
+                </ul>
+                <ul class="dropdown-content-sublist">
+                  <li>
+                    <a href="#">
+                      <img
+                        src="./images/brampton-bikes.jpg"
+                        alt="foldable city bike brand brompton"
+                    /></a>
+                    <a href="#"> Brompton Bikes</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img
+                        src="./images/pinnacle-bikes.jpg"
+                        alt="city bike brand pinnacle"
+                    /></a>
+                    <a href="#"> Pinnacle Bikes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a class="uppercase-text" class="uppercase-text" href="#"
+              >electric bikes</a
+            >
+          </li>
+          <li><a class="uppercase-text" href="#">clothing &amp; helmets</a></li>
+          <li><a class="uppercase-text" href="#">accesories</a></li>
+          <li><a class="uppercase-text" href="#">components</a></li>
+          <li><a class="uppercase-text" href="#">maintenance</a></li>
+          <li><a class="uppercase-text" href="#">scooters &amp; skate</a></li>
+          <li><a class="uppercase-text" href="#">clearance</a></li>
+        </ul>
+      </nav>
+      <div class="header-bottom">
+        <a href="#">
+          <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
+          <!-- <i class="fa-sharp fa-regular fa-bicycle"></i> -->
+          Save with Ride-To-Work</a
+        >
+        <a href="#">
+          <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
+          Book a Repair / Service</a
+        >
+        <a href="#">
+          <i class="fa-sharp fa-solid fa-screwdriver-wrench"></i>
+          Click & Collect across the UK</a
+        >
+        <a href="#">
+          <i class="fa-sharp fa-solid fa-truck"></i>Express Delivery - £7.99</a
+        >
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
