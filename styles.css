@@ -18,11 +18,12 @@ body {
   font-size: 16px;
   font-family: var(--font-family);
 }
+  /* Header */
 .header-top {
   display: flex;
+  flex-direction: column;
   padding: 2rem 1rem;
   width: 100%;
-  justify-content: space-around;
 }
 .header-top a img {
   width: 200px;
@@ -145,10 +146,11 @@ body {
   object-fit: cover;
   margin-top: 1rem;
 }
-/* Header Bottom */
+
+/* Quick access */
 .header-bottom {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
 .header-bottom {
   flex: 1 1 auto;
@@ -167,3 +169,18 @@ body {
 .header-bottom a i {
   margin: 0 0.5rem;
 }
+
+/* Media Queries for large screens */
+  /* Header */
+.header-top {
+    padding: 2rem 1rem;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+/* Quick access */
+@media screen and (min-width: 1200px) {
+  .header-bottom {
+    justify-content: space-around;
+  }
+ }
